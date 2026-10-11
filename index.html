@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa De Latte — Premium Drive-In Coffee Ordering</title>
+  <meta name="description" content="Drive in, order from your car, and enjoy premium artisanal coffee, velvety lattes, and fresh bakery treats delivered right to your vehicle.">
+  <meta name="theme-color" content="#ACDBDD">
+  <link rel="icon" type="image/png" sizes="32x32" href="wp-content/uploads/2024/11/cropped-Group-570-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="wp-content/uploads/2024/11/cropped-Group-570-180x180.png">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://casadelatte.in/">
+  <meta property="og:title" content="Casa De Latte — Premium Drive-In Coffee Ordering">
+  <meta property="og:description" content="Drive in, order from your car, and enjoy premium artisanal coffee delivered right to your vehicle.">
+  <meta property="og:image" content="wp-content/uploads/2024/11/ee31413befb50eda774e6a1a843bb89d_1721905569.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700;800&family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Standalone Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Fog Background Effect -->
+  <div class="ambient-fog" aria-hidden="true"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="badge">Drive-In Open</span>
+    <span>☕ Welcome to Casa De Latte — Order from your car or enjoy our garden patio • Open 8:00 AM – 11:00 PM Daily</span>
+  </div>
+
+  <!-- Site Header & Sticky Nav -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand-logo-link" aria-label="Casa De Latte Home">
+        <img src="wp-content/uploads/2024/11/Group-570.png" alt="Casa De Latte Logo" class="logo-badge" width="52" height="52">
+        <div class="brand-text">
+          <span class="brand-title">Casa De Latte</span>
+          <span class="brand-tagline">Artisanal Coffee & Drive-In</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#experience" class="nav-link">Drive-In</a>
+        <a href="#menu" class="nav-link">Our Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-drive-in open-order-modal" data-item="Signature Drive-In Tray">
+          <i class="fa-solid fa-car-side"></i>
+          <span>Order From Car</span>
+        </button>
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-backdrop-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            <span>Premium Drive-In Coffee Ordering</span>
+          </div>
+          <h1 class="hero-title">
+            Sip Extraordinary Coffee from the <span class="highlight-teal">Comfort of Your Car</span>.
+          </h1>
+          <p class="hero-desc">
+            Crafted with 100% single-origin Arabica, velvety microfoam, and freshly baked artisanal pastries. Drive in, order seamlessly, and let us bring warm cafe hospitality directly to your window.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn-primary">
+              <i class="fa-solid fa-mug-hot"></i>
+              <span>Explore Menu</span>
+            </a>
+            <button type="button" class="btn-outline open-order-modal" data-item="Drive-In Pre-Order">
+              <i class="fa-solid fa-car"></i>
+              <span>Drive-In Pickup</span>
+            </button>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Arabica Specialty Roasts</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">4.9 ★</span>
+              <span class="metric-label">Google Verified Rating</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">0-Min</span>
+              <span class="metric-label">Hassle-Free Car Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="wp-content/uploads/2024/11/ee31413befb50eda774e6a1a843bb89d_1721905569.jpg" alt="Casa De Latte Boutique Storefront" width="440" height="480">
+            <div class="hero-floating-badge">
+              <div class="floating-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="floating-text">
+                <h4>Master Barista Craft</h4>
+                <p>Silky Microfoam & Balanced Extractions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-images-stack">
+          <div class="about-main-img-box">
+            <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102234.png" alt="Casa De Latte Storefront amidst Lush Trees" width="560" height="520">
+          </div>
+          <div class="about-inset-badge">
+            <img src="wp-content/uploads/2024/11/Group-570.png" alt="Casa De Latte Seal" class="badge-round-logo" width="58" height="58">
+            <div class="badge-text">
+              <strong>Casa De Latte</strong>
+              <span>Est. in Nature & Elegance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Our Cafe Story</span>
+          <h3>Where Boutique Cafe Culture Meets Effortless Drive-In Convenience</h3>
+          <p>
+            Tucked under a canopy of lush green foliage, Casa De Latte was born from a desire to combine the warmth of a European sidewalk espresso bar with the swift convenience of drive-in service.
+          </p>
+          <div class="about-quote">
+            "We believe great coffee shouldn't require searching for parking. Whether you're on your morning commute or enjoying an evening garden breeze, your perfect cup is ready."
+          </div>
+          <div class="about-features">
+            <div class="feature-point">
+              <div class="feature-point-icon">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="feature-point-text">
+                <h5>Ethically Sourced Beans</h5>
+                <p>Carefully selected single-origin and premium espresso blends roasted to highlight sweetness.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="feature-point-icon">
+                <i class="fa-solid fa-car-on"></i>
+              </div>
+              <div class="feature-point-text">
+                <h5>Drive-In Delivery</h5>
+                <p>Pull into our shaded drive-in lane and get your coffee delivered right to your seat.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="feature-point-icon">
+                <i class="fa-solid fa-bread-slice"></i>
+              </div>
+              <div class="feature-point-text">
+                <h5>Baked Daily Pastries</h5>
+                <p>Golden almond croissants, chocolate muffins, and freshly prepared viennoiserie.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="feature-point-icon">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+              <div class="feature-point-text">
+                <h5>Serene Garden Seating</h5>
+                <p>Step out to enjoy our outdoor patio under fairy lights and peaceful green shade.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn-primary">
+            <span>Explore Our Full Menu</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drive-In Process Section -->
+    <section class="drive-in-process-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">How Drive-In Works</span>
+          <h2 class="section-title">The Seamless Car Ordering Experience</h2>
+          <p class="section-desc">Experience three simple steps to gourmet coffee without ever leaving the comfort of your vehicle.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span class="process-step-num">01</span>
+            <div class="process-icon">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h4>Pull Up to Our Lane</h4>
+            <p>Drive right into our designated shaded drive-in bays at Casa De Latte. No parking hunt or walking required.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-num">02</span>
+            <div class="process-icon">
+              <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+            <h4>Select Your Favorites</h4>
+            <p>Scan our digital QR code, pre-order on our site, or let our attentive team assist you right at your window.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-num">03</span>
+            <div class="process-icon">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+            <h4>Fresh Delivery to Your Car</h4>
+            <p>Receive piping hot lattes, crisp cold brews, and oven-fresh croissants delivered securely in spill-proof carriers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Artisanal Selection</span>
+          <h2 class="section-title">Handcrafted Coffee & Daily Bakes</h2>
+          <p class="section-desc">Every drink is meticulously ground and calibrated fresh for balanced acidity, deep body, and rich crema.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="menu-filter-bar">
+          <button type="button" class="menu-filter-btn active" data-filter="all">All Items</button>
+          <button type="button" class="menu-filter-btn" data-filter="lattes">Signature Lattes</button>
+          <button type="button" class="menu-filter-btn" data-filter="coffee">Classic Brews</button>
+          <button type="button" class="menu-filter-btn" data-filter="cold">Cold Brews & Iced</button>
+          <button type="button" class="menu-filter-btn" data-filter="bakery">Bakery & Treats</button>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+
+          <!-- Item 1: Casa Signature Latte -->
+          <article class="menu-card" data-category="lattes">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102302.png" alt="Casa Signature Latte with Fine Latte Art">
+              <span class="menu-card-tag">Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Casa Signature Latte</h3>
+                <span class="menu-item-price">₹240</span>
+              </div>
+              <p class="menu-item-desc">Our house specialty blend with double espresso, velvety microfoam, and delicate hints of natural toasted vanilla.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-fire-flame-curved"></i> Hot / Iced</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Casa Signature Latte">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Spanish Latte -->
+          <article class="menu-card" data-category="lattes">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102302.png" alt="Spanish Latte">
+              <span class="menu-card-tag">Best Seller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Spanish Latte</h3>
+                <span class="menu-item-price">₹260</span>
+              </div>
+              <p class="menu-item-desc">Silky condensed milk gently layered with bold espresso and steamed whole milk for an irresistible creamy sweetness.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-fire-flame-curved"></i> Hot / Iced</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Spanish Latte">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Slow-Steeped Cold Brew -->
+          <article class="menu-card" data-category="cold">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/23e480c2a78586f6271ac05bdb50d3f9_1689478175.jpg" alt="Slow-Steeped Cold Brew on Patio Tray">
+              <span class="menu-card-tag">Refreshing</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Slow-Steeped Cold Brew</h3>
+                <span class="menu-item-price">₹230</span>
+              </div>
+              <p class="menu-item-desc">18-hour cold water extraction yielding zero bitterness, deep dark chocolate undertones, and crisp citrus notes.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-snowflake"></i> Chilled</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Slow-Steeped Cold Brew">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Signature Affogato -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102216.png" alt="Signature Affogato with Italian Gelato">
+              <span class="menu-card-tag">Dessert Coffee</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Signature Affogato</h3>
+                <span class="menu-item-price">₹220</span>
+              </div>
+              <p class="menu-item-desc">A generous scoop of rich Madagascar vanilla gelato drowned in a freshly pulled double shot of piping hot espresso.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-ice-cream"></i> Italian Classic</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Signature Affogato">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Almond Flaked Croissant -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102335.png" alt="Almond Flaked Croissants">
+              <span class="menu-card-tag">Fresh Baked</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Almond Flaked Croissant</h3>
+                <span class="menu-item-price">₹190</span>
+              </div>
+              <p class="menu-item-desc">Buttery, golden French puff pastry filled with luscious almond frangipane cream and topped with toasted almond slices.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-bread-slice"></i> Viennoiserie</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Almond Flaked Croissant">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Gourmet Muffins Selection -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102312.png" alt="Gourmet Muffins Trio: Chocolate, Vanilla-Orange, Blueberry">
+              <span class="menu-card-tag">Chef's Choice</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Gourmet Muffin Trio</h3>
+                <span class="menu-item-price">₹180</span>
+              </div>
+              <p class="menu-item-desc">Your choice of Decadent Belgian Dark Chocolate, Zesty Vanilla & Fresh Orange, or Wild Mountain Blueberry crumble.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-cake-candles"></i> Bakery Treat</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Gourmet Muffin Trio">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Caramel Macchiato -->
+          <article class="menu-card" data-category="lattes">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102302.png" alt="Caramel Macchiato">
+              <span class="menu-card-tag">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Caramel Macchiato</h3>
+                <span class="menu-item-price">₹250</span>
+              </div>
+              <p class="menu-item-desc">Freshly steamed milk flavored with Madagascar vanilla, marked with double espresso and drizzled with buttery salted caramel.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-fire-flame-curved"></i> Hot / Iced</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Caramel Macchiato">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Classic Double Cappuccino -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102302.png" alt="Cappuccino Arabica">
+              <span class="menu-card-tag">Classic</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Classic Cappuccino</h3>
+                <span class="menu-item-price">₹210</span>
+              </div>
+              <p class="menu-item-desc">Harmonious balance of double espresso, equal parts velvety steamed milk, and a dense, luxurious crown of microfoam.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-mug-hot"></i> Pure Espresso</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Classic Cappuccino">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Iced Shakerato Latte -->
+          <article class="menu-card" data-category="cold">
+            <div class="menu-card-img-wrap">
+              <img src="wp-content/uploads/2024/11/23e480c2a78586f6271ac05bdb50d3f9_1689478175.jpg" alt="Iced Shakerato Latte">
+              <span class="menu-card-tag">Chilled</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-title">Iced Shakerato Latte</h3>
+                <span class="menu-item-price">₹250</span>
+              </div>
+              <p class="menu-item-desc">Espresso shaken vigorously over ice with organic cane syrup, poured over cold whole milk for an airy froth.</p>
+              <div class="menu-card-footer">
+                <span class="category-pill"><i class="fa-solid fa-snowflake"></i> Shaken Cold</span>
+                <button type="button" class="order-btn-sm" aria-label="Add Iced Shakerato Latte">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery & Atmosphere Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Moments & Atmosphere</span>
+          <h2 class="section-title">Step Inside Casa De Latte</h2>
+          <p class="section-desc">From our tranquil garden patio illuminated by evening fairy lights to our artisanal bakes and coffee craft.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery 1: Large Featured Storefront -->
+          <div class="gallery-item span-2">
+            <img src="wp-content/uploads/2024/11/ee31413befb50eda774e6a1a843bb89d_1721905569.jpg" alt="Casa De Latte Boutique Front Daytime">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">The Boutique Cafe</h4>
+              <span class="gallery-category">Daytime Tranquility & French Doors</span>
+            </div>
+          </div>
+
+          <!-- Gallery 2: Garden Patio Night -->
+          <div class="gallery-item row-2">
+            <img src="wp-content/uploads/2024/11/5ec2742b704e9e0bc417e4f8b3a8a79d_1675693375.jpg" alt="Garden Patio Seating Under Fairy Lights">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Evening Garden Patio</h4>
+              <span class="gallery-category">Fairy Lights & Canopy Shade</span>
+            </div>
+          </div>
+
+          <!-- Gallery 3: Latte Art Detail -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102302.png" alt="Velvety Latte Art on Burlap">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Pouring Perfection</h4>
+              <span class="gallery-category">Barista Latte Art</span>
+            </div>
+          </div>
+
+          <!-- Gallery 4: Almond Croissants -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102335.png" alt="Oven Fresh Almond Croissants">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Golden Viennoiserie</h4>
+              <span class="gallery-category">Baked Daily in Small Batches</span>
+            </div>
+          </div>
+
+          <!-- Gallery 5: Muffins Spread -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102312.png" alt="Gourmet Chocolate and Fruit Muffins">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Artisan Muffins</h4>
+              <span class="gallery-category">Chocolate, Orange & Blueberry</span>
+            </div>
+          </div>
+
+          <!-- Gallery 6: Cups Toast -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/11/Screenshot-2024-11-25-102247.png" alt="Two Cups Raised in Toast in front of Cafe">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Coffee With Friends</h4>
+              <span class="gallery-category">Memories at Casa De Latte</span>
+            </div>
+          </div>
+
+          <!-- Gallery 7: Cold Brew on Tray -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/11/23e480c2a78586f6271ac05bdb50d3f9_1689478175.jpg" alt="Iced Coffee Beverage on Cafe Patio">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Refreshing Cold Brew</h4>
+              <span class="gallery-category">Patio Relaxing</span>
+            </div>
+          </div>
+
+          <!-- Gallery 8: Illuminated Night Emblem -->
+          <div class="gallery-item">
+            <img src="wp-content/uploads/2024/12/WhatsApp-Image-2024-12-24-at-20.49.45_43c06e44.jpg" alt="Glowing Casa De Latte Night Logo Sign">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Night Radiance</h4>
+              <span class="gallery-category">Casa De Latte Signage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Customer Love</span>
+          <h2 class="section-title">What Our Patrons Say</h2>
+          <p class="section-desc">Real experiences from coffee lovers who drive in or relax on our patio every single day.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The best drive-in coffee experience in the city! Pulling up and having a steaming Spanish latte handed straight to my car window on a busy morning is sheer luxury."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AR</div>
+              <div class="author-info">
+                <h5>Ananya Rawat</h5>
+                <span>Regular Commuter</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The evening garden patio under fairy lights is our favorite date spot. Their almond croissant paired with a flat white is out of this world — crisp, buttery, and fresh."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div class="author-info">
+                <h5>Rohan Kapoor</h5>
+                <span>Coffee Enthusiast</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The coffee quality here rivals the top artisanal roasteries in Milan. Exceptional single-origin beans, zero bitterness in the cold brew, and staff who truly care."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PM</div>
+              <div class="author-info">
+                <h5>Priya Menon</h5>
+                <span>Food & Travel Writer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drive-In Pre-Order Banner -->
+    <section class="drivein-banner-section">
+      <div class="container">
+        <div class="banner-box">
+          <div class="banner-text">
+            <h2>Skip the Wait — Order Your Drive-In Tray in Advance</h2>
+            <p>Tell us your vehicle details and beverage order ahead of time. By the time you pull into the lane, your coffee is poured and boxed hot.</p>
+            <div class="banner-cta-group">
+              <button type="button" class="btn-primary open-order-modal" data-item="Pre-Order Tray">
+                <i class="fa-solid fa-car-side"></i>
+                <span>Pre-Order for Drive-In</span>
+              </button>
+              <a href="tel:+919876543210" class="btn-outline">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Ahead</span>
+              </a>
+            </div>
+          </div>
+          <div class="banner-image-preview">
+            <img src="wp-content/uploads/2024/11/Group-569-1.png" alt="Casa De Latte Pack and Takeaway Cup">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visit Us</span>
+          <h2 class="section-title">Drive In or Dine Under the Trees</h2>
+          <p class="section-desc">Find us conveniently located with easy drive-in access and generous garden patio seating.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-text">
+                <h4>Our Location</h4>
+                <p>Casa De Latte, Main Cafe Drive-In Lane<br>Bangalore / Hyderabad Corridor, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info-text">
+                <h4>Contact & Pre-Orders</h4>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><a href="mailto:contact@casadelatte.in">contact@casadelatte.in</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="info-text">
+                <h4>Opening Hours</h4>
+                <div class="cafe-hours-box">
+                  <div class="cafe-hours-row">
+                    <span class="day">Monday – Thursday</span>
+                    <span class="time">8:00 AM – 11:00 PM</span>
+                  </div>
+                  <div class="cafe-hours-row">
+                    <span class="day">Friday – Saturday</span>
+                    <span class="time">8:00 AM – Midnight</span>
+                  </div>
+                  <div class="cafe-hours-row">
+                    <span class="day">Sunday</span>
+                    <span class="time">8:00 AM – 11:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-embed-card">
+            <iframe 
+              title="Casa De Latte Location Map"
+              src="https://maps.google.com/maps?q=coffee+shop&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="#home" class="brand-logo-link">
+            <img src="wp-content/uploads/2024/11/image-16-1.png" alt="Casa De Latte White Logo" width="120" height="120">
+          </a>
+          <p>
+            Casa De Latte is your sanctuary for specialty coffee, artisan pastries, and seamless drive-in hospitality. Every cup is brewed with uncompromising passion.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Story</a></li>
+            <li><a href="#experience">Drive-In Process</a></li>
+            <li><a href="#menu">Signature Menu</a></li>
+            <li><a href="#gallery">Atmosphere & Patio</a></li>
+            <li><a href="#contact">Location & Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Casa Signature Latte</a></li>
+            <li><a href="#menu">Spanish Sweet Latte</a></li>
+            <li><a href="#menu">18-Hour Cold Brew</a></li>
+            <li><a href="#menu">Vanilla Bean Affogato</a></li>
+            <li><a href="#menu">Almond Croissants</a></li>
+            <li><a href="#menu">Gourmet Muffins</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Subscribe for seasonal roasts, secret drive-in specials, and upcoming coffee tasting events.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Your email address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to Newsletter">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Casa De Latte. All Rights Reserved. Artisanal Drive-In Coffee.</p>
+        <p>Built with pure HTML & CSS • Fast, Lightweight & Fully Self-Contained</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image preview">&times;</button>
+    <div class="lightbox-img-box">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+  </div>
+
+  <!-- Drive-In Order Modal -->
+  <div class="order-modal" id="orderModal" role="dialog" aria-modal="true" aria-label="Drive-In Pre-Order Form">
+    <div class="modal-content">
+      <button type="button" class="modal-close" id="orderModalClose" aria-label="Close pre-order modal">&times;</button>
+      <div class="modal-header">
+        <h3>🚗 Drive-In Pre-Order</h3>
+        <p>Your beverages and bakes prepared right as you pull in!</p>
+      </div>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="customerName">Your Full Name</label>
+          <input type="text" id="customerName" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="vehiclePlate">Car / Plate Number (Optional)</label>
+            <input type="text" id="vehiclePlate" class="form-control" placeholder="e.g. KA-01-AB-1234">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="orderItemSelect">Selected Order</label>
+          <select id="orderItemSelect" class="form-control">
+            <option value="Casa Signature Latte">Casa Signature Latte (₹240)</option>
+            <option value="Spanish Latte">Spanish Latte (₹260)</option>
+            <option value="Slow-Steeped Cold Brew">Slow-Steeped Cold Brew (₹230)</option>
+            <option value="Signature Affogato">Signature Affogato (₹220)</option>
+            <option value="Almond Flaked Croissant">Almond Flaked Croissant (₹190)</option>
+            <option value="Gourmet Muffin Trio">Gourmet Muffin Trio (₹180)</option>
+            <option value="Caramel Macchiato">Caramel Macchiato (₹250)</option>
+            <option value="Classic Cappuccino">Classic Cappuccino (₹210)</option>
+            <option value="Iced Shakerato Latte">Iced Shakerato Latte (₹250)</option>
+            <option value="Signature Drive-In Tray">Signature Drive-In Tray (Combo)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="orderNotes">Special Instructions / Customizations</label>
+          <input type="text" id="orderNotes" class="form-control" placeholder="e.g. Oat milk, extra hot, less sweet">
+        </div>
+        <button type="submit" class="btn-submit">Confirm Drive-In Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toastMsg" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastText">Item added to your order!</span>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
